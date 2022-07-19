@@ -15,3 +15,5 @@ And I built it only with Vanilla JS, HTML and CSS. 🌴
 Yes... I could build it much faster with some good frameworks. But I decided to code it all the old-school hard way only with my own JS scripts. 'cause I like coding. 😎
 
 pls hire me
+
+---
