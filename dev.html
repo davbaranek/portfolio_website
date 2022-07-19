@@ -1,0 +1,382 @@
+<head>
+  <title>Hola, I am David! Designer, marketer and future developer</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,maximum-scale=1.0, user-scalable=no" /> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href='style.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/06a504f280.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+<div onclick="hideProject();" id="x" class="d-none">
+  <i class="fas fa-times"></i>
+</div>
+
+<div id="menu" class="position-fixed d-flex flex-column min-vh-100 justify-content-center align-items-center ">
+  <div onclick="scrolltoElement('home');" class="menu_icon d-flex align-items-center justify-content-center"><a>HOME</a><i  class="fas fa-home"></i></div>
+  <div onclick="scrolltoElement('my_story_img');" class="menu_icon d-flex align-items-center justify-content-center"><a>MY STORY</a><i class="fas fa-user"></i></div>
+  <div onclick="scrolltoElement('my_work');" class="menu_icon d-flex align-items-center justify-content-center"><a>MY WORK</a><i class="fas fa-briefcase"></i></div>
+  <div onclick="scrolltoElement('contact');" class="menu_icon d-flex align-items-center justify-content-center"><a>CONTACT</a><i class="fas fa-phone"></i></div>
+</div>
+
+<div class="arrow d-none d-lg-block" id="arrow_meet_me">
+  <a onclick="scrolltoElement('my_story_img');">MEET ME</a><img src="img/arrow_light.png">
+</div>
+
+<div class="container" id="home">
+  <div class="d-flex flex-column min-vh-100 justify-content-center">
+    <div class="tag">&lt;div&gt;</div>
+    <h1>Hola,<br> I am <span class="red_color">David</span>!</h1>
+    <row>
+    <div class="col-md-7 p-2">
+      <p>I enjoy programming websites and apps. My dream is to be paid for it. <br>Can you help me with that?</p>
+    </div>
+    </row>
+    <div class="tag">&lt;/div&gt;</div>
+  </div>
+</div>
+
+<div class="light_bcg" id="my_story">
+  <div class="arrow d-none d-lg-block" id="arrow_projects">
+    <a onclick="scrolltoElement('my_work');">MY PROJECTS</a><img src="img/arrow_dark.png">
+  </div>
+  <div class="container">
+
+    <div class="row">
+     <div class="col-md-6 p-4">
+       <img id="my_story_img_mobil"class="my_story_img d-block d-md-none" src="img/david_photo.jpg">
+       <div class="tag">&lt;h2&gt;</div>
+       <h2>My <span class="red_color">story</span></h2>
+       <div class="tag">&lt;/h2&gt;</div>
+       <p></p>
+       <p>I am a Slovak student about to finish a master’s degree in marketing communications. Since high school, I have been working and gaining experience in a variety of marketing fields: copywriting, social media management, and graphic design. I am currently working as a graphic designer for a marketing agency in Bratislava, Slovakia.</p>
+       <p>As a graphic designer and content creator working with websites, I sometimes worked with programming languages such as: Javascript, and PHP. And the more I work and develop programming, the more I realise just how much I enjoy it.</p>
+       <p>I love creating something that is functional, valuable, new, and hat can help people. And I enjoy solving any problem that may arise. Currently, I am looking for a company that wagers on my potential and helps me further my career as a developer.</p>
+     </div>
+     <div class="col-md-6 p-4">
+        <img id="my_story_img" class="my_story_img d-none d-md-block" src="img/david_photo.jpg">
+        <h3>About my <span class="red_color">experiences</span>...</h3>
+        <p>In high school, I attended courses like programming and web design where I studied HTML, CSS, Javascript, PHP, and Java. Later on, during university, I studied WordPress development. I was also programming during my free time - I created some of own projects, I helped my friends, and friends of friends with their websites and I am currently supporting the development team at Teapot, marketing agency in Bratislava, Slovakia.</p>
+        <p>I continue to have a deep passion for design and marketing. Aside from programming, I can help you with building frameworks, UI prototypes, visual identities, or social media strategy. All I ask is for an opportunity to show what I’m capable of.</p>
+        <a href="cv.pdf">SEE MY CV</a>
+     </div>
+    </div>
+    </div>
+</div>
+  <div class="container" id="my_work">
+    <div class="col-md-6">
+    <h2>My <span class="red_color">work</span></h2>
+    <p>I have never worked as a professional developer. However, I've coded a few things in my free time as well as for my friends. Here they are...</p>
+    </div>
+  </div>
+  <div class="project" id="project_cbd">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="img/cbd_app.png" width="620px"></img>
+      </div>
+      <div class="project_text col-lg-7 d-flex flex-column justify-content-center">
+        <h4>Calculate your CBD dose</h4>
+        <p class="technologies"><i class="fas fa-wrench"></i>
+   HTML, CSS and Javascript</p>
+        <p>During my time in Teapot marketing agency, we had a client that sells CBD oil. When preparing materials for their website, it was necessary to note an approximate daily dose of CBD for a person. I found out the dosing of CBD is not that simple, and I could not find any decent calculator of CBD dosages in the Slovak language. So, I made one...</p>
+        <a class="projects_see_more" onclick="seeProject('project_cbd');">SEE MORE ABOUT THIS PROJECT</a>
+        <div class="hidden_part d-none"> 
+          <p>The app is designed as mobile-first. I made the UX intuitive, without any unnecessary elements and with large and easy-reachable buttons. The UI has a feeling of calm and nature thanks to round boxes and colours. I intentionally didn’t use green as a primary colour, to make it different from similar websites that are always green.</p>
+          <p>The app is made with HTML and CSS without frameworks. It uses Vanilla Javascript. In the future, I would like to add a possibility to show results after the customer will enter their e-mail and create a tool for gathering e-mail addresses from the app.</p>
+          <a target="_blank" href="projects/cbd.html">TRY THE APP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="project" id="project_plugin">
+  <div class="container">
+    <div class="row">
+      <div class="project_text col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+        <h4>More products sharing same stock (WP plugin)</h4>
+        <p class="technologies"><i class="fas fa-wrench"></i>
+   Woocomerce, PHP</p>
+        <p>I was helping a friend with his e-commerce store in Woocomerce. He needed to have two products sharing the same stock, however, we couldn’t find any plugin that could handle it. That’s why I created a simple plugin for him with this function.</p>
+        <a class="projects_see_more" onclick="seeProject('project_plugin');">SEE MORE ABOUT THIS PROJECT</a>
+        <div class="hidden_part d-none"> 
+          <p>The plugin adds a custom field in the product page of Woocomerce. Here, the admin can put an ID of the product, that he wants to pair. When a customer will buy this product, the stock of paired product will be reduced as well.</p>
+          <p>Apart from this functionality, I made a basic validation that will alert the admin if he puts a non-existing product or the same product. If the product pairing is complete from both sites, the app will show a message with information of successful pairing.</p>
+          <p>I think, this plugin can help also other Woocomerce websites owners. That’s why I would like to finish it, add some more functionality, and improve the UI design of the plugin. Then, I will attempt to add it to the Wordpress store.</p>
+
+          <a href="projects/Two-product-sharing-same-stock.zip">DOWNLOAD</a>
+          <a target="_blank" href="https://www.codepile.net/pile/dqNDjbRB">SEE THE CODE</a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 order-lg-2 order-1">
+        <img src="img/pairing_plugin.png" class="project_reverse" width="620px"></img>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="project" id="project_test">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="img/test_app.png" width="620px"></img>
+      </div>
+      <div class="project_text col-lg-7 d-flex flex-column justify-content-center">
+        <h4>High school test smartphone app </h4>
+        <p class="technologies"><i class="fas fa-wrench"></i>
+   HTML, CSS and Javascript</p>
+        <p>This is an older, unfinished project I created five years ago. During my last year of high school, I was preparing for the final state exams. I was revising using exam papers from previous years. However, it took a lot of time to evaluate my score and check correct answers. As part of procrastination to avoid studying for state exams, I started to create an app that can help me with this problem.</p>
+        <a class="projects_see_more" onclick="seeProject('project_test');">SEE MORE ABOUT THIS PROJECT</a>
+        <div class="hidden_part d-none"> 
+          <p>This app was designed to show old final exam tests from the Slovak language. A student has 100 minutes to pass all questions and after that, the app will evaluate their answers and tell, whether they had passed or not.</p>
+          <p>Currently, the app shows just one test from 2016. It’s not responsive, because it was designed only for mobile devices. Also, I used some techniques that are now considered dated. The project is unfinished, but one day I may return to it and finish it. I still think it could be useful for many high school students.</p>
+          <a target="_blank" href="projects/test_app.html">TRY THE APP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container design_projects">
+    <h2><span class="red_color">Design</span> projects</h2>
+    <p>Apart from programming, I have experience with graphic design. This can be useful in your future project since design goes hand in hand with development.</p>
+    <p>All pieces of design in my portfolio are made by me from scratch - that means without settled easy-to-follow brand guidelines.</p>
+
+  <div class="row">
+    <div class="col-md-4 design_project">
+      <img src="img/design/Brander_design_01.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Advertisement for Social Media</b></p>
+        <p><i>Brander | clothes seller</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 design_project">
+      <img src="img/design/Brander_design_02.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Advertisement for Social Media</b></p>
+        <p><i>Brander | clothes seller</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 design_project">
+      <img src="img/design/Brander_design_03.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Advertisement for Social Media</b></p>
+        <p><i>Brander | clothes seller</i></p>
+      </div>
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-12 design_project">
+      <img src="img/design/webdizajn_tvoje.jpg" loading="lazy">
+       <div class="description">
+        <p><b>UX / UI Design + logo design</b></p>
+        <p><i>Tvojedzravechudnutie.sk | Customized meal plans</i></p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+    <div class="col-md-6 design_project">
+      <img src="img/design/wywar_design01.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media Visual Identity</b></p>
+        <p><i>Wywar | beer</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-6 design_project">
+      <img src="img/design/wywar_design03.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media Visual Identity</b></p>
+        <p><i>Wywar | beer</i></p>
+      </div>
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-4 design_project">
+      <img src="img/design/Furtix_design01.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media visual identity</b></p>
+        <p><i>Frutix | Fruit and veggies seller</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 design_project">
+      <img src="img/design/Furtix_design02.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media visual identity</b></p>
+        <p><i>Frutix | Fruit and veggies seller</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-4 design_project">
+      <img src="img/design/Furtix_design03.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media visual identity</b></p>
+        <p><i>Frutix | Fruit and veggies seller</i></p>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 design_project">
+      <img src="img/design/teapot_design_03.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media visual identity</b></p>
+        <p><i>Teapot | Marketing agency</i></p>
+      </div>
+    </div>
+
+    <div class="col-md-6 design_project">
+      <img src="img/design/teapot_design_01.jpg" loading="lazy">
+      <div class="description">
+        <p><b>Social Media visual identity</b></p>
+        <p><i>Teapot | Marketing agency</i></p>
+      </div>
+    </div>
+</div>
+
+</div>
+
+ <div class="light_bcg" id="contact">
+  <div class="container d-flex justify-content-center">
+    <div>
+      <div class="tag">function hireMe() {</div>
+      <h2>Let's <span class="red_color">work</span> together</h2>
+      <p>Do you think I can fit your team? Please feel free to contact me and let’s talk about our possible cooperation. I am currently looking for an internship to boost my developing career and improve my programming skills.</p>
+      
+      <div class="cta form-inline justify-content-center">
+      <a class="main_button button" href="tel:+421911312346"><span>CALL ME</span></a>
+      <p>or</p>
+      <a class="secondary_button button" href="mailto:davbaranek@gmail.com"><span>E-MAIL ME</span></a>
+      </div>
+      <div class="tag">}</div>
+      <div class="signature">
+      <hr>
+      <p><b>Dávid Baránek</b></p>
+      <p>+421 911 312 346</p>
+      <p>davbaranek@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<script>
+
+let open_project;
+
+//Hide project when user scrolls and Esc press
+
+window.onscroll = function () {
+  if (open_project && $(window).width() > 960) hideProject();
+}
+
+document.addEventListener('keydown', function(event){
+  if(event.key === "Escape" && open_project) hideProject();
+});
+
+const scrolltoElement = function(element) {
+   if (open_project) hideProject();
+
+   if (element == "my_story_img" && $(window).width() < 960) {
+      document.getElementById("my_story_img_mobil").scrollIntoView({behavior: "smooth"});
+    } else {
+      document.getElementById(element).scrollIntoView({behavior: "smooth"});
+    }
+}
+
+//Return true if the element is in the viewport
+
+const isInViewport = function(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+//Handling the project - see and hide
+
+const seeProject = function(project) {
+  const project_box = document.getElementById(project);
+
+  project_box.style.height = '100vh';
+  project_box.style.backgroundColor= "#F3F4EC";
+  project_box.style.color= "#424343";
+  project_box.classList.add("light_bcg")
+
+    //Responsive design
+
+  if ($(window).width() > 960) {
+    if (project_box.getElementsByClassName("project_reverse")[0]) {
+      project_box.getElementsByTagName("img")[0].style.margin = '20% 0 0 0';  
+    } else {
+       project_box.getElementsByTagName("img")[0].style.margin = '20% 0 0 -70px';
+    }
+  } else {
+    project_box.getElementsByTagName("img")[0].style.margin = '20px 0 0 0';
+    project_box.getElementsByTagName("img")[0].style.width = '400px';
+      document.getElementsByTagName("body")[0].style.overflow= "hidden";
+      project_box.classList.add("overflow-auto");
+  }
+
+  
+  project_box.getElementsByClassName("projects_see_more")[0].classList.add("d-none");
+  scrolltoElement(project);
+
+  setTimeout(function() { open_project = project; }, 350);
+  document.getElementById("x").classList.remove("d-none");
+
+
+  project_box.getElementsByClassName("hidden_part")[0].classList.remove("d-none");
+
+}
+
+const hideProject = function() {
+  const project_box = document.getElementById(open_project);
+
+  //Responsibility
+  if ($(window).width() > 960) {
+    project_box.style.height = '440px';
+    if (project_box.getElementsByClassName("project_reverse")[0]) {
+      project_box.getElementsByTagName("img")[0].style.margin = '-70px 0px -120px 0px';  
+    } else {
+       project_box.getElementsByTagName("img")[0].style.margin = '-70px 0 -120px -70px';
+    }
+  } else {
+    project_box.style.height = 'auto';
+    project_box.getElementsByTagName("img")[0].style.margin = '-70px 0px 0px 0px';  
+    project_box.getElementsByTagName("img")[0].style.width = '250px';
+    document.getElementsByTagName("body")[0].style.overflow= "auto";
+    project_box.classList.remove("overflow-auto");
+  }
+  project_box.style.backgroundColor= "#4C4B4D";
+  project_box.style.color= "#C7C9C9";
+  project_box.classList.remove("light_bcg")
+
+  project_box.getElementsByClassName("projects_see_more")[0].classList.remove("d-none");
+  open_project = "";
+  document.getElementById("x").classList.add("d-none");
+
+  project_box.getElementsByClassName("hidden_part")[0].classList.add("d-none");
+
+}
+</script>
+
+</body>
+</html>
