@@ -18,4 +18,4 @@ pls hire me
 
 ---
 
-And I almost forgot... You can check the website [here](https://davbaranek.com/dev).
+And I almost forgot... You can check the website [here](https://davidbaranek.com/dev).
