@@ -55,7 +55,7 @@ const isInViewport = function(element) {
 
 const seeProject = function(project) {
   const project_box = document.getElementById(project);
-  const first_image = project_box.getElementsByTagName("img")[0];
+  const first_image = getElementsByTagName("img")[0];
   const body = document.getElementsByTagName("body")[0];
 
   project_box.style.height = '100vh';
