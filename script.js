@@ -55,7 +55,7 @@ const isInViewport = function(element) {
 
 const seeProject = function(project) {
   const project_box = document.getElementById(project);
-  const first_image = getElementsByTagName("img")[0];
+  const first_image = project_box.getElementsByTagName("img")[0];
   const body = document.getElementsByTagName("body")[0];
 
   project_box.style.height = '100vh';
@@ -96,7 +96,7 @@ const seeProject = function(project) {
 
 const hideProject = function() {
   const project_box = document.getElementById(open_project);
-  const first_image = getElementsByTagName("img")[0];
+  const first_image = project_box.getElementsByTagName("img")[0];
   const body = document.getElementsByTagName("body")[0];
 
   project_box.style.backgroundColor= "#4C4B4D";
@@ -112,14 +112,14 @@ const hideProject = function() {
   if ($(window).width() > 960) {
     project_box.style.height = '440px';
     if (project_box.getElementsByClassName("project_reverse")[0]) {
-      project_box.first_image.style.margin = '-70px 0px -120px 0px';  
+      first_image.style.margin = '-70px 0px -120px 0px';  
     } else {
-       project_box.first_image.style.margin = '-70px 0 -120px -70px';
+       first_image.style.margin = '-70px 0 -120px -70px';
     }
   } else {
     project_box.style.height = 'auto';
-    project_box.first_image.style.margin = '-70px 0px 0px 0px';  
-    project_box.first_image.style.width = '250px';
+    first_image.style.margin = '-70px 0px 0px 0px';  
+    first_image.style.width = '250px';
     body.style.overflow= "auto";
     project_box.classList.remove("overflow-auto");
   }
